@@ -1,0 +1,3 @@
+cut -f14 amazon_reviews_us_Books_v1_02.tsv > REVIEWBODIES.txt;
+sed 's/[,.;]\| and \| or \| if \| in \| it \|<...\/>//gi' REVIEWBODIES.txt > REVIEWBODIES_EDITED.txt &
+

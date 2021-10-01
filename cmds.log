@@ -1,0 +1,40 @@
+ 2056  head amazon_reviews-us_Books_v1_02.tsv
+ 2057  head amazon_reviews_us_Books_v1_02.tsv
+ 2058  cut -f14 amazon_reviews_us_Books_v1_02.tsv > REVIEWBODIES.txt
+ 2059  head REVIEWBODIES.txt
+ 2060  sed '/[,.;]\|and\|or\|if\|in\|it\|<...\/>/ d' REVIEWBODIES.txt > REVIEWBODIES_EDITED.txt
+ 2061  head REVIEWBODIES_EDITED.txt
+ 2062  sed 's/[,.;]\|and\|or\|if\|in\|it\|<...\/>/""/g' REVIEWBODIES.txt > REVIEWBODIES_EDITED.txt
+ 2063  head REVIEWBODIES_EDITED.txt
+ 2064  sed 's/[,.;]\| and \| or \| if \| in \| it \|<...\/>/""/g' REVIEWBODIES.txt > REVIEWBODIES_EDITED.txt
+ 2065  head REVIEWBODIES_EDITED.txt
+ 2066  sed 's/[,.;]\| and \| or \| if \| in \| it \|<...\/>//gi' REVIEWBODIES.txt > REVIEWBODIES_EDITED.txt
+ 2067  head REVIEWBODIES_EDITED.txt
+ 2068  head REVIEWBODIES.txt
+ 2069  sed 's/[,.;]\| and \| or \| if \| in \| it \|<...\/>//gi' REVIEWBODIES.txt > REVIEWBODIES_EDITED.txt
+ 2070  sed 's/[,.;]\| and \| or \| if \| in \| it \|<...\/>/ /gi' REVIEWBODIES.txt > REVIEWBODIES_EDITED.txt &
+ 2071  jobs
+ 2072  head REVIEWBODIES.txt
+ 2073  head REVIEWBODIES_EDITED.txt
+ 2074  history > cmds.log
+ 2075  touch ws7.txt
+ 2076  vi ws7.txt
+ 2077  tail -n 50 cmds.log
+ 2078  tail -n 19 cmds.log > temp.log
+ 2079  cat temp.log > cmds.log
+ 2080  head cmds.log
+ 2081  touch CS185C/ws/ws7
+ 2082  mv cmds.log CS185C/ws/ws7
+ 2083  mv ws7.txt CS185C/ws/ws7
+ 2084  mv REVIEWBODIES_EDITED.txt CS185C/ws/ws7
+ 2085  ls
+ 2086  rm temp.log
+ 2087  mv CS185C/ws/ws7
+ 2088  cd CS185C/ws/ws7
+ 2089  ls
+ 2090  cd CS185C/ws/ws7
+ 2091  cd CS185C
+ 2092  ls
+ 2093  cd ws
+ 2094  ls
+ 2095  ls ws7
